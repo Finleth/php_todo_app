@@ -13,6 +13,7 @@ $todo = mysqli_fetch_assoc($result);
 ?>
 <html>
     <head>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link rel="stylesheet" href="assets/todo.css">
     </head>
     <body>
@@ -20,7 +21,7 @@ $todo = mysqli_fetch_assoc($result);
             <h1><?= $todo['name'] ?></h1>
             <p><?= $todo['description'] ?></p>
             <a href="./">Back</a>
-            <a href="./delete.php">Delete</a>
+            <a href="./delete.php?id=<?= $todo_id ?>">Delete</a>
         </div>
     </body>
 </html>

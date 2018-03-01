@@ -13,6 +13,6 @@
             Description:
             <input type="text" name="description" placeholder="description of to do item" required>
         </div>
-        <button class="add-btn">Add To Do</button>
+        <button class="add-btn">ADD TO DO</button>
     </form>
 </div>
