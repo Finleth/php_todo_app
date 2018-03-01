@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    margin: 20px;
+}
+
+.form-container {
+    float: right;
+    width: 20%;
+    min-width: 200px;
+    margin-right: 5%;
+}
+
+.field {
+    margin-top: 20px;
+}
+
+input {
+    height: 35px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.add-btn {
+    width: 50%;
+    height: 35px;
+    margin-top: 15px;
+    border-radius: 5px;
+    float: right;
+}
+
+.add-btn:focus {
+    outline: none;
+}
+
+
+.list {
+    padding: 0;
+    margin-top: 20px;
+}
+
+.list li:nth-child(2n - 1){
+    background-color: lavender;
+}
+
+.todo {
+    display: block;
+    width: 60%;
+    max-width: 400px;
+    height: 50px;
+    list-style-type: none;
+}
+
+.todo a {
+    text-decoration: none;
+}
+
