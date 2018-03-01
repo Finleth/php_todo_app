@@ -16,10 +16,11 @@ $todo = mysqli_fetch_assoc($result);
         <link rel="stylesheet" href="assets/todo.css">
     </head>
     <body>
-        <div class="main_container">
+        <div class="main-container">
             <h1><?= $todo['name'] ?></h1>
             <p><?= $todo['description'] ?></p>
+            <a href="./">Back</a>
+            <a href="./delete.php">Delete</a>
         </div>
-        <a href="./">Back</a>
     </body>
 </html>
