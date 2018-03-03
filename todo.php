@@ -25,7 +25,7 @@ $todo = mysqli_fetch_assoc($result);
             <p><?= $todo['description'] ?></p>
             <p>Due on the date: <?= $todo['due_date'] ?></p>
             <a href="./edit_form.php?id=<?= $todo_id ?>"><button>Edit</button></a>
-            <a href="./delete.php?id=<?= $todo_id ?>"><button>Delete</button></a>
+            <a href="./confirm_delete.php?id=<?= $todo_id ?>"><button>Delete</button></a>
         </div>
     </body>
 </html>

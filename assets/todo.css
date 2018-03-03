@@ -48,4 +48,5 @@ button {
 .return {
     display: inline-block;
     margin: 10px 15px;
+    font-size: 2rem;
 }
