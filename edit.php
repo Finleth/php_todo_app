@@ -2,15 +2,14 @@
 
 require_once('todocreds.php');
 
-
-if (isset($_GET['id'])) {
-    $todo_id = $_GET['id'];
-} else {
-    header('Location: ./404_page.php');
+if (empty($_GET['id']) || !isset($_GET['name']) || !isset($_GET['description']) || !isset($_GET['due_date'])) {
+    ?><div>
+        Something went wrong
+    </div><?php
     exit;
 }
 
-
+$todo_id = $_GET['id'];
 $name = $_GET['name'];
 $description = $_GET['description'];
 $date = $_GET['due_date'];

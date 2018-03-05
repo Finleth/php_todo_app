@@ -23,6 +23,12 @@ $result = mysqli_query($connection, $sql);
                             </a>
                         </li><?php
                     }
+                } else {
+                    ?>
+                        <div>
+                            No Todos
+                        </div>
+                    <?php
                 }
             }
         ?>
