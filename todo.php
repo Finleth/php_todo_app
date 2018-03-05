@@ -43,7 +43,7 @@ $date = $todo['due_date'];
             <p><?= $todo['description'] ?></p>
             <p>Due on the date: <?= $todo['due_date'] ?></p>
             <a href="./edit_form.php?id=<?= $todo_id ?>"><button>Edit</button></a>
-            <a href="./confirm_delete.php?<?php print("id=$todo_id&name=$name&description=$description&date=$date") ?>"><button>Delete</button></a>
+            <a href="./confirm_delete.php?<?= "id=$todo_id&name=$name&description=$description&date=$date" ?>"><button>Delete</button></a>
         </div>
     </body>
 </html>

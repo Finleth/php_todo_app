@@ -14,7 +14,7 @@ body, h1, h2, h3, h4, h5, h6, p {
 
 .main-container {
     position: absolute;
-    top: 5%;
+    top: 8%;
     left: 50%;
     transform: translate(-50%, 0);
     width: 80%;
@@ -22,8 +22,10 @@ body, h1, h2, h3, h4, h5, h6, p {
 }
 
 a {
+    display: inline-block;
     text-decoration: none;
     color: black;
+    margin: 5px;
 }
 
 .main-container > * {
@@ -35,6 +37,7 @@ input {
     width: 60%;
     padding: 5px;
     font-size: 2rem;
+    border: 1px solid black;
 }
 
 textarea {
@@ -44,6 +47,7 @@ textarea {
     overflow-y: visible;
     font-size: 1.5rem;
     padding: 5px;
+    border: 1px solid black;
 }
 
 button {
@@ -59,4 +63,14 @@ button {
     display: inline-block;
     margin: 10px 15px;
     font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    input {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
 }
