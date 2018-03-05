@@ -3,7 +3,7 @@
     <form action="add.php" method="GET">
         <div class="field">
             To Do:
-            <input type="text" name="todo" placeholder="to do title" required>
+            <input type="text" name="todo" placeholder="To do title" required>
         </div>
         <div class="field">
             Due Date:   
@@ -11,8 +11,8 @@
         </div>
         <div class="field">
             Description:
-            <input type="text" name="description" placeholder="description of to do item" required>
+            <input type="text" name="description" placeholder="Description of to do item" required>
         </div>
-        <button class="add-btn">Add To Do</button>
+        <button class="add-btn">ADD TO DO</button>
     </form>
 </div>

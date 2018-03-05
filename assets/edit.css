@@ -21,21 +21,33 @@ body, h1, h2, h3, h4, h5, h6, p {
     text-align: center;
 }
 
-h1 {
-    font-size: 3rem;
-    text-transform: uppercase;
-}
-
-p {
-    margin: 15px;
-    font-size: 1.5rem;
-}
-
 a {
     display: inline-block;
     text-decoration: none;
     color: black;
     margin: 5px;
+}
+
+.main-container > * {
+    display: block;
+    margin: 15px auto;
+}
+
+input {
+    width: 60%;
+    padding: 5px;
+    font-size: 2rem;
+    border: 1px solid black;
+}
+
+textarea {
+    width: 70%;
+    min-height: 200px;
+    height: auto;
+    overflow-y: visible;
+    font-size: 1.5rem;
+    padding: 5px;
+    border: 1px solid black;
 }
 
 button {
@@ -51,4 +63,14 @@ button {
     display: inline-block;
     margin: 10px 15px;
     font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    input {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
 }

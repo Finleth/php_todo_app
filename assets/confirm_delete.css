@@ -12,23 +12,29 @@ body, h1, h2, h3, h4, h5, h6, p {
     padding: 0;
 }
 
+h3 {
+    margin: 20px;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 20px;
+    font-size: 1.5rem;
+}
+
 .main-container {
     position: absolute;
-    top: 8%;
+    top: 5%;
     left: 50%;
     transform: translate(-50%, 0);
     width: 80%;
     text-align: center;
 }
 
-h1 {
-    font-size: 3rem;
-    text-transform: uppercase;
-}
-
-p {
-    margin: 15px;
-    font-size: 1.5rem;
+.main-container > * {
+    display: block;
 }
 
 a {
@@ -45,10 +51,4 @@ button {
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
-}
-
-.return {
-    display: inline-block;
-    margin: 10px 15px;
-    font-size: 2rem;
 }
