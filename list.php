@@ -2,7 +2,7 @@
 
 require_once('todocreds.php');
 
-$sql = "SELECT id, name, due_date FROM todos";
+$sql = "SELECT * FROM todos";
 
 $result = mysqli_query($connection, $sql);
 
@@ -23,6 +23,12 @@ $result = mysqli_query($connection, $sql);
                             </a>
                         </li><?php
                     }
+                } else {
+                    ?>
+                        <div>
+                            No Todos
+                        </div>
+                    <?php
                 }
             }
         ?>
