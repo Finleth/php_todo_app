@@ -3,12 +3,18 @@
 require_once('todocreds.php');
 
 $sql = "SELECT * FROM todos";
+$created_date = "";
+$due_date = "";
 
 if (isset($_GET['sort'])){
     switch ($_GET['sort']){
         case 'due_date':
             $sql .= ' ORDER BY due_date';
+            $due_date = 'selected';
             break;
+        case 'created_date':
+            $created_date = 'selected';
+            break;    
     }
 }
 
@@ -20,8 +26,8 @@ $result = mysqli_query($connection, $sql);
     <form action="./">
         <label for="sort">Sort To Do's By</label>
         <select name="sort" id="sort">
-            <option value="due_date">Due Date</option>
-            <option value="created_date">Created Date</option>
+            <option value="created_date" <?= $created_date  ?>>Created Date</option>
+            <option value="due_date" <?= $due_date  ?>>Due Date</option>
         </select>
         <button>Go</button>
     </form>
